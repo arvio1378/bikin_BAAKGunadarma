@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-universitas-gunadarma.png" type="image/x-icon">
+    <title>BAAK Online</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb30ddf7c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<!-- header -->
+<header>
+    <div class="bg-[url('../img/background.jpg')] bg-cover bg-no-repeat">
+        <!-- menu -->
+        <div class="flex justify-between items-center p-5 menu max-xl:block max-xl:p-0 max-xl:relative">
+            <div class="flex justify-between items-center max-xl:block">
+                <a href="#" class="max-xl:hidden"><img src="img/text-logo.png" alt="text-logo" class="w-auto h-16 mr-2"></a>
+                <a href="#" class="max-xl:hidden">
+                    <h3 class="text-xl">BAAK</h3>
+                    <p class="text-sm">Biro Administrasi dan Kemahasiswaan</p>
+                </a>
+                <div class="hidden max-xl:flex max-xl:items-center shadow-3xl border-b-2 w-full max-xl:bg-white max-xl:p-3 max-xl:fixed z-50">
+                    <i class="fa-solid fa-bars text-red-600 text-2xl bars z-50"></i> 
+                    <h3 class="text-xl text-center w-full">BAAK</h3>
+                </div>
+            </div>
+            <div class="text-blue-950 flex items-center gap-3 duration-300 navbar max-xl:flex-col max-xl:items-start max-xl:fixed max-xl:top-10 max-xl:p-10 max-xl:h-screen max-xl:bg-white max-xl:-translate-x-full">
+                <img src="img/text-logo.png" alt="text-logo" class="w-auto h-20 mr-2 hidden max-xl:block">
+                <a href="#" class="font-semibold text-lg underline max-xl:no-underline max-xl:text-sky-400 ">Home</a>
+                <!-- info update -->
+                <div class="relative">
+                    <a href="#" class="font-semibold text-lg hover:underline peer/update">Info Update <i class="fa-solid fa-chevron-down text-sm"></i></a>
+                    <!-- dropdown info update -->
+                        <div class="absolute invisible opacity-0 top-10 bg-blue-950 text-gray-300 text-lg p-5 w-64 peer-hover/update:opacity-100 peer-hover/update:visible hover:visible hover:opacity-100 delay-500 duration-300">
+                            <!-- sidang -->
+                            <div class="py-2 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Sidang</p>
+                                </a>
+                            </div>
+                            <!-- PI FIKTI -->
+                            <div class="py-2 group border-y">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">PI FIKTI</p>
+                                </a>
+                            </div>
+                            <!-- Materi PPSPPT -->
+                            <div class="py-2 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Materi PPSPPT</p>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                <!-- info pelayanan -->
+                <div class="relative">
+                    <a href="#" class="font-semibold text-lg hover:underline peer/layanan">Info Pelayanan <i class="fa-solid fa-chevron-down text-sm"></i></a>
+                    <!-- dropdown info pelayanan -->
+                    <div class="z-50 fixed invisible opacity-0 bg-blue-950 text-gray-300 p-10 text-lg peer-hover/layanan:opacity-100 peer-hover/layanan:visible hover:visible hover:opacity-100 delay-500 duration-300 flex justify-between w-1/2 left-1/2 -translate-x-1/2">
+                        <!-- perkuliahan dan ujian -->
+                        <div>
+                            <h3 class="font-bold text-white text-xl">Perkuliahan dan Ujian</h3>
+                            <!-- kalender akademik -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Kalender Akademik</p>
+                                </a>
+                            </div>
+                            <!-- Daftar mata kuliah -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Daftar Mata Kuliah</p>
+                                </a>
+                            </div>
+                            <!-- daftar dosen wali kelas -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Daftar Dosen Wali Kelas</p>
+                                </a>
+                            </div>
+                            <!-- koordinator mata kuliah -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Koordinator Mata Kuliah</p>
+                                </a>
+                            </div>
+                            <!-- Daftar dosen pembimbing PI -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Daftar Dosen Pembimbing PI</p>
+                                </a>
+                            </div>
+                            <!-- Jadwal kuliah -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Jadwal Kuliah</p>
+                                </a>
+                            </div>
+                            <!-- Jadwal Ujian -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Jadwal Ujian</p>
+                                </a>
+                            </div>
+                            <!-- Pengurusan ujian bentrok -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Pengurusan Ujian Bentrok</p>
+                                </a>
+                            </div>
+                            <!-- Formulir Rencana Studi -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Formulir Rencana Studi</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- administrasi akademik -->
+                        <div> 
+                            <h3 class="font-bold text-white text-xl">Administrasi Akademik</h3>
+                            <!-- Daftar ulang -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Daftar Ulang</p>
+                                </a>
+                            </div>
+                            <!-- Cuti akademik -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Cuti Akademik</p>
+                                </a>
+                            </div>
+                            <!-- Tidak aktif kuliah -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Tidak Aktif Kuliah</p>
+                                </a>
+                            </div>
+                            <!-- Pengecekan nilai -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Pengecekan Nilai</p>
+                                </a>
+                            </div>
+                            <!-- Pindah lokasi/waktu kuliah -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Pindah Lokasi/Waktu Kuliah</p>
+                                </a>
+                            </div>
+                            <!-- Pindah jurusan -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Pindah Jurusan</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="font-semibold text-lg hover:underline">FAQ</a>
+                <a href="#" class="font-semibold text-lg hover:underline">Situs SAP</a>
+                <a href="#" class="font-semibold text-lg hover:underline">Buku Pedoman</a>
+                <div>
+                    <a href="#" class="font-semibold text-lg hover:underline peer/layanan">Situs Jurusan <i class="fa-solid fa-chevron-down text-sm"></i></a>
+                    <!-- dropdown situs jurusan -->
+                    <div class="z-50 fixed invisible opacity-0 bg-blue-950 text-gray-300 p-10 text-lg peer-hover/layanan:opacity-100 peer-hover/layanan:visible hover:visible hover:opacity-100 delay-500 duration-300 flex justify-between w-11/12 left-1/2 -translate-x-1/2 gap-10">
+                        <!-- Teknologi Industri -->
+                        <div>
+                            <h3 class="font-bold text-white text-xl">Teknologi Industri</h3>
+                            <!-- Informatika -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Informatika</p>
+                                </a>
+                            </div>
+                            <!-- Elektro -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Elektro</p>
+                                </a>
+                            </div>
+                            <!-- Mesin -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Mesin</p>
+                                </a>
+                            </div>
+                            <!-- Industri -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Industri</p>
+                                </a>
+                            </div>
+                            <!-- Agroteknologi -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Agroteknologi</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ilmu komputer -->
+                        <div>
+                            <h3 class="font-bold text-white text-xl">Ilmu Komputer</h3>
+                            <!-- sistem informasi -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Sistem Informasi</p>
+                                </a>
+                            </div>
+                            <!-- Sistem komputer -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Sistem Komputer</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Sipil perencanaan -->
+                        <div>
+                            <h3 class="font-bold text-white text-xl">Sipil Perencanaan</h3>
+                            <!-- Arsitektur -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Arsitektur</p>
+                                </a>
+                            </div>
+                            <!-- Sipil -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Sipil</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Psikologi -->
+                        <div>
+                            <h3 class="font-bold text-white text-xl">Sipil Perencanaan</h3>
+                            <!-- Psikologi -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Psikologi</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ekonomi -->
+                        <div>
+                            <h3 class="font-bold text-white text-xl">Sipil Perencanaan</h3>
+                            <!-- Akuntansi -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Akuntansi</p>
+                                </a>
+                            </div>
+                            <!-- Manajemen -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Manajemen</p>
+                                </a>
+                            </div>
+                            <!-- Syari'ah -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Syari'ah</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Sastra -->
+                        <div>
+                            <h3 class="font-bold text-white text-xl">Sipil Perencanaan</h3>
+                            <!-- Sastra inggris -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Sastra Inggris</p>
+                                </a>
+                            </div>
+                            <!-- Pariwisata -->
+                            <div class="my-3 group">
+                                <a href="#">
+                                    <div class="absolute opacity-0 group-hover:opacity-100 group-hover:translate-x-1 duration-500">
+                                        <i class="fa-solid fa-chevron-right text-xs pr-5"></i>
+                                    </div>
+                                    <p class="relative group-hover:translate-x-10 duration-500">Pariwisata</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- intro -->
+        <div class="flex justify-between items-center p-10 max-xl:py-20 max-lg:flex-col max-lg:text-center">
+            <div class="text-blue-950 w-1/2 max-lg:w-3/4">
+                <h1 class="text-5xl font-bold">B A A K</h1>
+                <h2 class="text-xl my-3">Biro yang menangani segala sesuatu yang berkaitan dengan penyelenggaraan kegiatan belajar mengajar dan administrasi akademik bagi seluruh mahasiswa Universitas Gunadarma</h2>
+                <p><i class="fa-solid fa-calendar-days"></i> 29 Oct 2023</p>
+            </div>
+            <div>
+                <div class="flex max-lg:mt-5">
+                    <input type="search" name="cari" id="cari" placeholder="Input Kelas / Dosen" class="p-2 w-72 placeholder:text-black outline-none border-2 border-gray-300 max-lg:w-96 max-sm:w-20">
+                    <button class="p-2 bg-red-600 hover:bg-red-800 duration-300 text-white font-bold max-sm:text-sm max-sm:p-1">Cari Jadwal Kuliah</button>
+                </div>
+                <div class="flex justify-end max-lg:block">
+                    <i class="fa-solid fa-chevron-down text-white bg-gray-700 rounded-full p-5 cursor-pointer mt-3"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- hero -->
+<section>
+    <marquee direction="left" class="bg-blue-950"><p class="text-white py-2">Layanan Loket 3 Senin dan Jumat jam 10.00 - 14.00, sedangkan LIVECHAT hari Senin - Jumat, jam 10.00 - 12.00 dan 13.00 - 15.00. Hari SELASA tidak ada layanan LIVECHAT.</p></marquee>
+
+    <div class="flex justify-center gap-10 p-5 max-lg:flex-col max-lg:w-3/4 max-lg:mx-auto max-sm:w-full">
+        <!-- kiri -->
+        <div>
+            <!-- jadwal akademik -->
+            <div class="my-5">
+                <h2 class="border-b border-black text-xl font-bold">Jadwal Akademik Ganjil (PTA) 2023/2024</h2>
+                <a href="#" class="after:content-['Jadwal_Perkuliahan'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a>
+            </div>
+            <!-- Info Update -->
+            <div class="my-5">
+                <h2 class="border-b border-black text-xl font-bold">Info Update</h2>
+                <a href="#" class="after:content-['Sidang'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['PI_FIKTI'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Materi_PPSPPT'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+            </div>
+            <!-- Perkuliahan dan ujian -->
+            <div class="my-5">
+                <h2 class="border-b border-black text-xl font-bold">Perkuliahan dan Ujian</h2>
+                <a href="#" class="after:content-['Kalender_Akademik'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Daftar_Mata_Kuliah'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Daftar_Dosen_Wali_Kelas'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Koordinator_Mata_Kuliah'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Daftar_Dosen_Pembimbing_PI'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Jadwal_Kuliah'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Jadwal_Ujian'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Pengurusan_Ujian_Bentrok'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Formulir_Rencana_Studi'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+            </div>
+            <!-- Administrasi akademik -->
+            <div class="my-5">
+                <h2 class="border-b border-black text-xl font-bold">Administrasi Akademik</h2>
+                <a href="#" class="after:content-['Daftar_Ulang'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Cuti_Akademik'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Tidak_Aktif_Kuliah'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Pengecekan_Nilai'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Pindah_Lokasi/Waktu_Kuliah'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+                <a href="#" class="after:content-['Pindah_Jurusan'] after:text-sky-500 after:hover:text-sky-900 after:duration-500 group"><i class="fa-solid fa-chevron-right text-red-500 pr-5 my-2 group-hover:translate-x-2 duration-500"></i></a><br>
+            </div>
+        </div>
+        <!-- tengah -->
+        <div>
+            <h2 class="text-3xl font-bold text-center mb-5">Kalender Akademik Ganjil (PTA) 2023/2024</h2>
+            <table class="w-full border-2 max-sm:text-sm" cellpadding="10">
+                <thead>
+                    <tr class="text-xl max-sm:text-base bg-red-600 text-white">
+                        <th class="border-2 w-1/2">Kegiatan</th>
+                        <th class="border-2 w-1/2">Tanggal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Perkuliahan sebelum Ujian Tengah Semester (UTS)</td>
+                        <td class="border-2">25 September - 9 Desember 2023</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Pendistribusian FRS ke mahasiswa melalui situs baak.gunadarma.ac.id</td>
+                        <td class="border-2">2 Oktober - 21 Oktober 2023</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Kegiatan Pengisian dan Cetak KRS</td>
+                        <td class="border-2"></td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">a. Kelas 2, 3 dan kelas 4</td>
+                        <td class="border-2">5 Oktober - 18 November 2023</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">b. Kelas 1 dan Non Kelas (termasuk Batal/Ubah/Tambah)</td>
+                        <td class="border-2">16 Oktober - 18 November 2023</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Batas akhir Cetak KRS Online</td>
+                        <td class="border-2">18 November 2023</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Batas akhir pengurusan cuti akademik</td>
+                        <td class="border-2">2 Desember 2023</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Ujian Tengah Semester (UTS)</td>
+                        <td class="border-2">11 Desember - 30 Desember 2023</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Libur Hari Natal</td>
+                        <td class="border-2">25 Desember - 26 Desember 2023</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Kursus/Pelatihan Berbasis Kompentensi untuk kelas 3 jenjang D3 dan kelas 4 jenjang S1</td>
+                        <td class="border-2">27 Desember - 30 Desember 2023</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Perkuliahan setelah UTS</td>
+                        <td class="border-2">1 Januari - 27 Januari 2024</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Ujian Utama</td>
+                        <td class="border-2">29 Januari - 3 Februari 2024</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Ujian Akhir Semester (UAS)</td>
+                        <td class="border-2">5 Februari - 17 Februari 2024</td>
+                    </tr>
+                    <tr class="odd:bg-white even:bg-slate-100">
+                        <td class="border-2">Kursus/Pelatihan Berbasis Kompentensi untuk kelas 1, 2, 3 jenjang S1</td>
+                        <td class="border-2">19 Februari - 2 Maret 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- kanan -->
+        <div>
+            <!-- kalender akademik -->
+            <div class="my-5">
+                <h2 class="border-b border-black text-xl font-bold">Kalender Akademik Ganjil (PTA) 2023/2024</h2>
+                <div class="my-2">
+                    <a href="#" class="group">
+                        <p class="text-sky-500 group-hover:text-blue-950">Kalender Akademik Ganjil (PTA) 2023/2024</p>
+                        <p class="opacity-60 group-hover:opacity-100">(click for download)</p>
+                    </a>
+                </div>
+            </div>
+            <!-- Pelayanan di Loket BAAK 1-8 -->
+            <div class="my-5">
+                <h2 class="border-b border-black text-xl font-bold">Pelayanan di Loket BAAK 1-8</h2>
+                <table class="w-full text-gray-500 text-[12px]" cellpadding="5">
+                    <thead>
+                        <tr class="font-bold border-b-2 text-left">
+                            <th>Hari</th>
+                            <th>Waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b-2 odd:font-bold">
+                            <td>Senin-Kamis</td>
+                            <td>10.00-15.00 WIB</td>
+                        </tr>
+                        <tr class="border-b-2 odd:font-bold">
+                            <td>(Istirahat)</td>
+                            <td>12.00-13.00 WIB</td>
+                        </tr>
+                        <tr class="border-b-2 odd:font-bold">
+                            <td>Jum'at</td>
+                            <td>10.00-14.30 WIB</td>
+                        </tr>
+                        <tr class="border-b-2 odd:font-bold">
+                            <td>(Istirahat)</td>
+                            <td>11.30-13.30 WIB</td>
+                        </tr>
+                        <tr class="border-b-2 odd:font-bold">
+                            <td>Sabtu</td>
+                            <td>09.30-12.00 WIB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Berita -->
+            <div class="my-5">
+                <h2 class="border-b border-black text-xl font-bold">Berita</h2>
+                <!-- batas akhir pembayaran -->
+                <div class="my-2">
+                    <a href="#" class="group">
+                        <p class="text-sky-500 group-hover:text-blue-950">Batas Akhir Pembayaran UK, Isi-Cetak KRS PTA 23/24</p>
+                        <p class="opacity-60 group-hover:opacity-100">(23/10/2023)</p>
+                    </a>
+                </div>
+                <!-- PI -->
+                <div class="my-2">
+                    <a href="#" class="group">
+                        <p class="text-sky-500 group-hover:text-blue-950">Penulisan Ilmiah (PI) PTA 2023/2024</p>
+                        <p class="opacity-60 group-hover:opacity-100">(22/10/2023)</p>
+                    </a>
+                </div>
+                <!-- e-form -->
+                <div class="my-2">
+                    <a href="#" class="group">
+                        <p class="text-sky-500 group-hover:text-blue-950">Pengisian e-Form Bank DKI bagi Mahasiswa Angkatan 2023</p>
+                        <p class="opacity-60 group-hover:opacity-100">(30/09/2023)</p>
+                    </a>
+                </div>
+                <!-- btn lihat semua -->
+                <div class="my-5">
+                    <a href="#" class="border-4 border-blue-950 px-3 py-2 hover:bg-blue-950 hover:text-white duration-300 rounded-md">Lihat Semua</a>
+                </div>
+            </div>
+            <!-- info -->
+            <div class="py-5">
+                <!-- info mahasiswa baru -->
+                <div class="bg-slate-100 my-5 p-5">
+                    <h2 class="text-xl font-bold flex items-center gap-5 mb-5"><i class="fa-solid fa-plus bg-red-700 p-2 text-white rounded-sm text-base cursor-pointer tombol1"></i> Info Mahasiswa Baru Angkatan 2023</h2>
+                    <div class="form1 overflow-hidden h-0 duration-500">
+                        <input type="radio" name="radio" id="radio"> Nama
+                        <input type="radio" name="radio" id="radio"> NPM <br>
+                        <input type="text" name="text" id="text" class="border border-slate-300 w-full p-3 outline-none">
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-950 duration-300 mt-5"><i class="fa-solid fa-magnifying-glass"></i> Cari</button>
+                    </div>
+                </div>
+                <!-- info mahasiswa kelas 2 -->
+                <div class="bg-slate-100 my-5 p-5">
+                    <h2 class="text-xl font-bold flex items-center gap-5 mb-5"><i class="fa-solid fa-plus bg-red-700 p-2 text-white rounded-sm text-base cursor-pointer tombol2"></i> Info Mahasiswa Kelas 2 Baru</h2>
+                    <div class="form2 overflow-hidden h-0 duration-500">
+                        <input type="radio" name="radio" id="radio"> Nama
+                        <input type="radio" name="radio" id="radio"> NPM
+                        <input type="radio" name="radio" id="radio"> Kelas <br>
+                        <input type="text" name="text" id="text" class="border border-slate-300 w-full p-3 outline-none">
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-950 duration-300 mt-5"><i class="fa-solid fa-magnifying-glass"></i> Cari</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer>
+    <div class="flex justify-between items-center mx-20 p-10 border-t-2 max-lg:flex-col">
+        <div class="flex items-center max-lg:flex-col max-lg:text-center">
+            <a href="#"><img src="img/text-logo.png" alt="text-logo" class="w-auto h-16 mr-2"></a>
+            <a href="#">
+                <h3 class="text-xl font-bold">BAAK</h3>
+                <p class="italic text-gray-400">Biro Administrasi dan Kemahasiswaan</p>
+            </a>
+        </div>
+        <p class="text-gray-500 text-lg">© 2023 All Rights Reserved Terms of Use and Privacy Policy</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
